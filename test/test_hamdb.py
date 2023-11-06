@@ -2,12 +2,12 @@ import os
 import sys
 import unittest
 
-# from blankpythonproject import blankpythonproject
+# from hamdb import hamdb
 
 
-class Test_blankpythonproject(unittest.TestCase):
+class Test_hamdb(unittest.TestCase):
     """
-    Test the various functionalities of blankpythonproject.
+    Test the various functionalities of hamdb.
     """
 
     @classmethod

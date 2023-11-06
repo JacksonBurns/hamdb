@@ -3,17 +3,17 @@ requires = ["setuptools>=64"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "blpyproj"
+name = "hamdb"
 version = "0.0.0"
 authors = [
     { name = "Jackson Burns" },
 ]
 license = { text = "MIT" }
-description = "Catchy slogan."
+description = "Heavy Metals and Monomers Database"
 classifiers = [
     "Programming Language :: Python :: 3",
 ]
-urls = { Homepage = "https://github.com/JacksonBurns/blank-python-project" }
+urls = { Homepage = "https://github.com/JacksonBurns/hamdb" }
 requires-python = ">=3.8"
 dependencies = []
 
@@ -33,5 +33,5 @@ include-package-data = true
 
 [tool.setuptools.packages.find]
 where = ["."]
-include = ["blankpythonproject*"]
+include = ["hamdb*"]
 exclude = ["docs*", "examples*", "test*"]

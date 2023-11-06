@@ -1,10 +1,10 @@
-blank-python-project
+hamdb
 ====================
 
 .. toctree::
    :maxdepth: 4
 
-   blankpythonproject
+   hamdb
    setup
    start_project
    test
