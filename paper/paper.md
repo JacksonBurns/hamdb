@@ -43,7 +43,7 @@ High-level items:
 Simulation notes:
 - Justify the approximation we are doing
 - Guess the initial geometry using Avogadro, plug into psi4 using cheap functional and LanL2MB (LanL2DZ slightly more expensive) to try and see if it converges, then scale this to a better basis set
-- B3LYP likely sufficient: https://pubs.acs.org/doi/10.1021/jp807643p
+- B3LYP likely sufficient [@yang_b3lyp].
 - Cc-p methods will likely be too expensive and require using PP methods
-- Def2 is probably the best bet: https://www.basissetexchange.org/
-- See this Kirk Peterson (PNNL) paper to decide on the best accuracy dataset for Cd: https://pubs.acs.org/doi/pdf/10.1021/jp063771j
+- Def2 is probably the best bet, based partly on search of Basis Set Exchange [@pritchard_basis_set_exchange].
+- See this Kirk Peterson (PNNL) paper to decide on the best accuracy dataset for Cd [@peterson_cd].
