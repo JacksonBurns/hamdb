@@ -47,3 +47,4 @@ Simulation notes:
 - Cc-p methods will likely be too expensive and require using PP methods
 - Def2 is probably the best bet, based partly on search of Basis Set Exchange [@pritchard_basis_set_exchange].
 - See this Kirk Peterson (PNNL) paper to decide on the best accuracy dataset for Cd [@peterson_cd].
+- use COSMO phase [@klamt_cosmo] simulation to enable formation of a solvent bubble around the TS and the reactants.
