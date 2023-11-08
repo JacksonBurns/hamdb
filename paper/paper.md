@@ -49,4 +49,8 @@ Simulation notes:
 - See this Kirk Peterson (PNNL) paper to decide on the best accuracy dataset for Cd [@peterson_cd].
 - use COSMO phase [@klamt_cosmo] simulation to enable formation of a solvent bubble around the TS and the reactants.
 
+## Work Notes
+Initial simulations of the product complex have been largely unsuccessful.
+Without knowing the precise mechanism of binding, many different configurations have been attempted, including N-M, N-M-N between two monomer units, and N-M-O within a monomer unit (seems possible based on https://www.sciencedirect.com/science/article/abs/pii/S1001074216308762).
+
 # Bibliography
