@@ -3,6 +3,15 @@
 # ignore the logfiles from pyscf
 examples/logfiles
 
+# testing files
+examples/sulfur
+examples/structures
+examples/old
+examples/prod
+examples/final
+examples/prod_anorcc_BAD
+*slurm*out
+*slurm*err
 
 
 # generic python .gitignore

@@ -11,5 +11,9 @@
   <img alt="PyPI - License" src="https://img.shields.io/github/license/JacksonBurns/hamdb">
 </p>
 
-## Online Documentation
-[Click here to read the documentation](https://JacksonBurns.github.io/hamdb/)
+## What is `hamdb`
+This repository contains the code needed to generate the heavy metal and monomers database, as well as the actual data (WIP).
+
+The general layout of this repository is shown below - see each subdirectory for more information:
+ - `examples`: shows how we use `pyscf` to simulate the monomers and metals.
+ - `hamdb`: (WIP)
