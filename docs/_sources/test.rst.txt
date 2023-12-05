@@ -4,10 +4,10 @@ test package
 Submodules
 ----------
 
-test.test\_blankpythonproject module
-------------------------------------
+test.test\_hamdb module
+-----------------------
 
-.. automodule:: test.test_blankpythonproject
+.. automodule:: test.test_hamdb
    :members:
    :undoc-members:
    :show-inheritance:

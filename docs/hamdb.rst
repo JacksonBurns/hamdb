@@ -1,13 +1,13 @@
-test package
-============
+hamdb package
+=============
 
 Submodules
 ----------
 
-test.test\_hamdb module
------------------------
+hamdb.hamdb module
+------------------
 
-.. automodule:: test.test_hamdb
+.. automodule:: hamdb.hamdb
    :members:
    :undoc-members:
    :show-inheritance:
@@ -15,7 +15,7 @@ test.test\_hamdb module
 Module contents
 ---------------
 
-.. automodule:: test
+.. automodule:: hamdb
    :members:
    :undoc-members:
    :show-inheritance:
