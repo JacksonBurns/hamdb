@@ -5,7 +5,6 @@ from datetime import datetime
 from pyscf import gto, solvent
 from pyscf.geomopt.geometric_solver import optimize
 from pyscf.hessian import thermo
-from pyscf.qsdopt.qsd_optimizer import QSD
 
 os.environ["OMP_NUM_THREADS"] = "96"  # number of threads
 os.environ["PYSCF_MAX_MEMORY"] = "192000"  # MB of memory
