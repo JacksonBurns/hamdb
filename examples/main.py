@@ -5,28 +5,16 @@ start = datetime.now()
 import numpy as np
 from funcs import get_molecule, run_all
 
+# used for geometry optimization
 BASIS_SET = "3-21g"
 
-monomer = get_molecule("xyzs/monomer.xyz", BASIS_SET)
-monomer.charge, monomer.spin = 0, 0
-
-cadmium = get_molecule("xyzs/cadmium.xyz", BASIS_SET)
-cadmium.charge, cadmium.spin = 2, 0
-
-vdw_complex = get_molecule("xyzs/vdw_sm_planar.xyz", BASIS_SET)
-vdw_complex.charge, vdw_complex.spin = 2, 0
-
-n_product = get_molecule("xyzs/n_product.xyz", BASIS_SET)
-n_product.charge, n_product.spin = 2, 0
-
-n_product_ts = get_molecule("xyzs/n_product_ts.xyz", BASIS_SET)
-n_product_ts.charge, n_product_ts.spin = 2, 0
-
-s_product = get_molecule("xyzs/s_product.xyz", BASIS_SET)
-s_product.charge, s_product.spin = 2, 0
-
-s_product_ts = get_molecule("xyzs/s_product_ts.xyz", BASIS_SET)
-s_product_ts.charge, s_product_ts.spin = 2, 0
+monomer = get_molecule("xyzs/monomer.xyz", BASIS_SET, 0, 0)
+cadmium = get_molecule("xyzs/cadmium.xyz", BASIS_SET, 2, 0)
+vdw_complex = get_molecule("xyzs/vdw_sm_planar.xyz", BASIS_SET, 2, 0)
+n_product = get_molecule("xyzs/n_product.xyz", BASIS_SET, 2, 0)
+n_product_ts = get_molecule("xyzs/n_product_ts.xyz", BASIS_SET, 2, 0)
+s_product = get_molecule("xyzs/s_product.xyz", BASIS_SET, 2, 0)
+s_product_ts = get_molecule("xyzs/s_product_ts.xyz", BASIS_SET, 2, 0)
 
 data_dict = {
     "monomer": {"pyscf_molecule": monomer, "is_ts": False},
@@ -38,7 +26,7 @@ data_dict = {
     "s_product_ts": {"pyscf_molecule": s_product_ts, "is_ts": True},
 }
 
-results = run_all(data_dict, use_cosmo=True)
+results = run_all(data_dict, logpath="logfiles_2step/", use_cosmo=True)
 
 
 def get_G(results, name):
