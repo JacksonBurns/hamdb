@@ -6,7 +6,7 @@ import warnings
 warnings.filterwarnings("ignore", message="Since PySCF.*")
                         
 from pyscf import gto, solvent
-from pyscf.dft import KS
+from mpipyscf.dft import RKS
 from pyscf.hessian import thermo
 
 os.environ["OMP_NUM_THREADS"] = "96"  # number of threads
@@ -31,7 +31,7 @@ def optfreq(mol, is_ts=False, use_cosmo=False, do_geomopt=True):
         mol.basis = "ano-rcc"
         mol.build()
     # returns a QM method object
-    mean_field = KS(
+    mean_field = RKS(
         mol,
         xc=FUNCTIONAL,
     )
