@@ -37,7 +37,11 @@ def optfreq(mol, is_ts=False, use_cosmo=False, do_geomopt=True):
     )
     # inject COSMO into method object
     if use_cosmo:
-        mean_field = mean_field.ddCOSMO()
+        # mean_field = mean_field.ddCOSMO()
+        mean_field = mean_field.PCM()
+        # mf.with_solvent.lebedev_order = 29 # 302 Lebedev grids
+        mean_field.with_solvent.method = 'COSMO'
+        mean_field.with_solvent.eps = 78.3553
     # skip geometry optimization for monatomics
     if do_geomopt and mol.natm > 1:
         if use_cosmo:
