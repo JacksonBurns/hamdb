@@ -15,7 +15,7 @@ examples/prod_anorcc_BAD
 *slurm*err
 examples/test.py
 examples/xyzs/water.xyz
-
+examples/logfiles*
 
 # generic python .gitignore
 

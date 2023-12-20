@@ -17,3 +17,6 @@ This repository contains the code needed to generate the heavy metal and monomer
 The general layout of this repository is shown below - see each subdirectory for more information:
  - `examples`: shows how we use `pyscf` to simulate the monomers and metals.
  - `hamdb`: (WIP)
+
+Note for GPU acceleration - had to install depdendencies from conda-forge to get things to work on SuperCloud.
+PyPI based install caused `LD_LIBRARY_PATH` problems.
